@@ -5,10 +5,10 @@ from .models import Warehouse, Fournisseur, Produit, category, Question, Client,
 
 
 
-class  WarehouseAdmin(admin.ModelAdmin):
-    list_display = ( 'name', 'address', 'capacity_Stock')   
-    list_filter = ('name', ) 
-    search_fields = ( 'name', )
+# class  WarehouseAdmin(admin.ModelAdmin):
+#     list_display = ( 'name', 'address', 'capacity_Stock')   
+#     list_filter = ('name', ) 
+#     search_fields = ( 'name', )
 
 
 
@@ -19,7 +19,7 @@ class FournisseurAdmin(admin.ModelAdmin):
 
 
 class ProduitAdmin(admin.ModelAdmin):
-    list_display = ( 'name', 'reference', 'category',  'QTT_Stock', 'Prix_Stock', 'QTT_Entree', 'Prix_Achat', 'QTT_Sortie', 'Prix_Vente', 'Fournisseur', 'Warehouse')
+    list_display = ( 'name', 'reference', 'category',  'QTT_Stock', 'Prix_Stock', 'QTT_Entree', 'Prix_Achat', 'QTT_Sortie', 'Prix_Vente', 'Fournisseur')
     list_filter = ('name', )
     search_fields = ( 'name',)
 
@@ -43,10 +43,10 @@ class FactureAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
-admin.site.register(Warehouse, WarehouseAdmin)
+# admin.site.register(Warehouse, WarehouseAdmin)
 admin.site.register(Fournisseur, FournisseurAdmin)
 admin.site.register(Produit, ProduitAdmin)
-admin.site.register(Question)
+# admin.site.register(Question)
 admin.site.register(category, categoryAdmin)
 admin.site.register(Client, clientAdmin)
 admin.site.register(Facture, FactureAdmin)

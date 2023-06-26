@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stock.apps.StockConfig',
     'pages.apps.PagesConfig',
+    'django_dia',
    
 ]
 
@@ -142,15 +143,15 @@ STATICFILES_DIRS=[
 
 JAZZMIN_SETTINGS = {
 # title of the window (Will default to current_admin_site.site_title if absent or None)
-    "site_title": "FIFTY-NINE•MAROC Admin",
+    "site_title": "GESTIONSTOCK Admin",
  # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
- "site_header": "FIFTY-NINE•MAROC",
+ "site_header": "INVENTORY",
  # Welcome text on the login screen
-    "welcome_sign": "Welcome to FIFTY-NINE•MAROC",
+    "welcome_sign": "Welcome to GESTIONSTOCK",
  # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "FIFTY-NINE•MAROC",
+    "site_brand": "GESTIONSTOCK",
 # Copyright on the footer
-    "copyright": "© FIFTY-NINE•MAROC",
+    "copyright": "© OUISSAM",
  "topmenu_links": [
 
     # Url that gets reversed (Permissions can be added)
@@ -188,5 +189,5 @@ JAZZMIN_UI_TWEAKS = {
 
 }
 
-JAZZMIN_SETTINGS["show_ui_builder"] = True
+JAZZMIN_SETTINGS["show_ui_builder"] = False 
 
